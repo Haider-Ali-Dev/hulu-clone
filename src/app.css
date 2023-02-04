@@ -14,7 +14,7 @@
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-image: linear-gradient(0deg, transparent 60%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.4) 100%),url('original.jpg');
+    background-image: linear-gradient(0deg, transparent 60%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.4) 100%),url('https://hulu-clone-qevpn17sa-haider-ali-dev.vercel.app/original.jpg');
 }
 
 .backg-trans {
