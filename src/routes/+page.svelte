@@ -100,8 +100,8 @@
 				</p>
 				<h1 class="text-center gf font-[600] text-[30px]">Live TV Makes It Better</h1>
 				<div class="flex justify-center">
-					<div class="flex flex-col justify-center w-[500px]">
-						<p class="text-center gf font-[500] w-[500px] breakwords">
+					<div class="flex flex-col justify-center sm:w-[300px] w-[500px]">
+						<p class="text-center gf sm:w-[300px] font-[500] w-[500px] breakwords">
 							Make the switch from cable. Get 85+ top channels on Hulu (With Ads) + Live TV with
 							your favorite live sports, news, and events - plus the entire Hulu streaming library.
 							With Unlimited DVR, store Live TV recordings for up to nine months and fast-forward
