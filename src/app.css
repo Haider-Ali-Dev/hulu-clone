@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.g {
+    font-family: "Graphik Web",sans-serif;
+}
+
+.gf {
+    font-family: 'Graphik Web', 'Graphik', sans-serif;
+}
+
+.main-image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(0deg, transparent 60%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.4) 100%),url('original.jpg');
+}
+
+.backg-trans {
+    background: linear-gradient(179.81deg, rgba(4,4,4,0.7) .17%, rgba(4,4,4,0.45) 85.02%, rgba(4,4,4,0.3) 112.52%) !important
+}
+
+.img-d {
+    background: linear-gradient(156.82deg, rgba(0,0,0,0.6) 4.58%, rgba(0,0,0,0) 69.61%),linear-gradient(24.5deg, rgba(0,0,0,0.2) 4.71%, rgba(0,0,0,0) 71.49%);
+}
