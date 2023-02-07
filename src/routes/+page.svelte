@@ -2,11 +2,14 @@
 	import Navbar from '$lib/Navbar.svelte';
 	import Box from '$lib/Box.svelte';
 	import Show from '$lib/Show.svelte';
+	import Modal from '$lib/Modal.svelte';
+	let showModal = false;
 </script>
 
 <main class="">
+	<Modal bind:showModal={showModal}/>
 	<div class="main-image">
-		<Navbar />
+		<Navbar bind:showModal={showModal}  />
 		<div class="">
 			<div>
 				<p
@@ -50,7 +53,7 @@
 						Sign up for Hulu only
 					</p>
 					<div class="flex justify-center mt-7">
-						<button class="gf rounded-md font-[600] text-center bg-[#1CE783] p-3 w-[500px]">
+						<button class="gf rounded-md font-[600] text-center hover:bg-[#1CE78390] bg-[#1CE783] p-3 w-[500px]">
 							GET ALL THREE
 						</button>
 					</div>

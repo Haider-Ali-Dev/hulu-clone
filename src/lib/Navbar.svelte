@@ -1,3 +1,13 @@
+<script lang="ts">
+	
+	export let showModal: boolean;
+	function openModal() {
+		showModal = !(showModal as boolean)
+
+	}
+	
+</script>
+
 <nav class="flex justify-between p-5">
 	<span class="fill-[#1ce783]">
 		<svg
@@ -13,7 +23,8 @@
 			/></svg
 		>
 	</span>
-    <p class="text-[#a8afbd] hover:bg-[#323843] rounded-xl hover:text-[#ffffff] g font-[600] tracking-[0.6px] cursor-pointer p-3 b-">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <p on:click={openModal} class="text-[#a8afbd] hover:bg-[#323843] rounded-xl hover:text-[#ffffff] g font-[600] tracking-[0.6px] cursor-pointer p-3 b-">
         LOG IN
     </p>
 </nav>
