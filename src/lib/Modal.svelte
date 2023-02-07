@@ -3,7 +3,7 @@
 	let password = '';
 	let email = '';
 	let isValid = false;
-	let learnMore = false
+	let learnMore = false;
 
 	function checkEmailAndPassword() {
 		console.log('called');
@@ -22,12 +22,16 @@
 		class="z-[1] fixed left-0 top-0 w-[100%] h-[100%] flex justify-center  overflow-auto p-5 rounded  bg-[rgba(0,0,0,0.4)]"
 	>
 		<div class="p-3 w-[600px] bg-white h-[600px] self-center">
-			<p
-				class="gf font-[600] cursor-pointer text-right text-[20px]"
-				on:click={() => (showModal = !showModal)}
-			>
-				X
-			</p>
+			<div class="w-[100%] flex justify-end">
+				
+				<button
+					class="gf j w-auto  font-[600] cursor-pointer text-right text-[20px]"
+					on:click={() => (showModal = !showModal)}
+				>
+					X
+				</button>
+			</div>
+
 			<div class="mt-2 p-5">
 				<h1 class="gf font-[600] text-[24px] leading-[1.24] tracking-[0.6]">Log In</h1>
 				<p class="mt-5 font-[400] text-[14px] leading-[21px] text-[#636E85]">
@@ -41,8 +45,7 @@
 						</div>
 						<div>
 							<input
-							bind:value={email}
-
+								bind:value={email}
 								on:change={checkEmailAndPassword}
 								class="w-[90%] p-3 font-[16px] border-[2px] border-solid rounded-md"
 								type="email"
@@ -62,7 +65,7 @@
 						</div>
 						<div>
 							<input
-							bind:value={password}
+								bind:value={password}
 								on:change={checkEmailAndPassword}
 								class="w-[90%] p-3 font-[16px] border-[2px] border-solid rounded-md"
 								type="password"
@@ -78,11 +81,15 @@
 				<div class="mt-5 flex justify-center">
 					<div class="w-[90%]">
 						{#if !isValid}
-							<button disabled class="bg-[#272C35] rounded-md opacity-50 w-[90%] text-white gf font-[500] p-3"
+							<button
+								disabled
+								class="bg-[#272C35] rounded-md opacity-50 w-[90%] text-white gf font-[500] p-3"
 								>LOGIN</button
 							>
 						{:else}
-							<button class="bg-[#272C35] rounded-md  w-[90%] text-white gf font-[500] p-3">LOGIN</button>
+							<button class="bg-[#272C35] rounded-md  w-[90%] text-white gf font-[500] p-3"
+								>LOGIN</button
+							>
 						{/if}
 					</div>
 				</div>
